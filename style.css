@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("jGlzr.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pernt {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.pernt h1 {
+    margin-top: auto;
+    font-family: cursive;
+    color: crimson;
+    margin: auto 50px;
+}
+
+.pernt ul {
+    margin: 15px;
+}
+
+.pernt ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.pernt ul li a {
+    color: hotpink;
+    font-weight: bold;
+}
+
+.section_form {
+    position: absolute;
+    height: 300px;
+    top: 30%;
+    left: 37%;
+}
+
+.section_form form input {
+    display: block;
+    min-width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5x;
+}
+
+.section_form h1 {
+    margin-left: -20px;
+    font-weight: bold;
+    color: crimson;
+    text-align: center;
+}
+
+.section_form form :last-child:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+#profile_h3 {
+    display: none;
+    margin-right: 10px;
+    position: relative;
+}
+
+#profile_h3 h4 {
+    margin-left: 6px;
+}
+
+#profile_h3 h4 a {
+    color: white
+}
+
+#logout {
+    margin-left: 10px;
+}
+
+
+/*#profile_h3 :last-child{
+    margin-left:0 ;
+}
+*/
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container img {
+    width: 300px;
+    margin-right: auto;
+    height: 300px;
+}
+
+.container .action {
+    flex: 1;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.action button {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-top: 25px;
+    border: none;
+    background-color: seagreen;
+    border-radius: 15px;
+}
+
+.action i {
+    margin-left: auto;
+    font-size: 25px;
+    color: brown;
+}
+
+.action i:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.action button:hover {
+    background-color: tomato;
+}
+
+.info-shopping {
+    margin-left: 15px;
+    font-family: cursive;
+}
+
+.info-shopping h3 {
+    cursor: pointer;
+}
+
+#icon-shoping {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#icon-shoping i {
+    color: white;
+    margin-top: 13px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+#icon-shoping span {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    color: white;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: tomato;
+    top: 10px;
+    left: 12px;
+    text-align: center;
+}
+
+#profile_h3 .allitem {
+    position: absolute;
+    top: 40px;
+    border: 1px solid;
+    left: 80px;
+    width: 60%;
+    padding: 10px 18px;
+    background-color: violet;
+    color: wheat
+}
+
+#profile_h3 .allitem a {
+    margin: 0;
+    color: brown;
+}
+
+#allitem {
+    display: none;
+}
+
+.allitem p {
+    margin-left: 0;
+}
+
+#imgd {
+    width: 80%;
+    margin: 5px 10%;
+    height: 400px;
+}
+
+.containe div {
+    margin: 0 10%;
+}
+
+#search {
+    line-height: normal;
+    margin: 10px 35px;
+    padding: 3px 8px;
+    border: 2px solid tomato;
+    width: 300px;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#plus {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    text-align: center;
+    line-height: 50px;
+    background-color: blueviolet;
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#plus i {
+    color: white
+}
+
+#plus:hover {
+    opacity: 0.8;
+}
+
+#select {
+    display: block;
+    min-width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5x;
+}
