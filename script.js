@@ -290,3 +290,14 @@ function addfavo(id) {
 
     }
 }
+let select = document.getElementById("select");
+select.addEventListener("change", filterF);
+
+function filterF() {
+    let filter = this.value
+    let filterData = JSON.parse(localStorage.getItem("data")).filter(ele => ele.size == filter);
+    document.querySelector(".cart").innerHTML = ""
+    show(filterData)
+    this.value = ""
+
+}
