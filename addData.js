@@ -19,6 +19,10 @@ add.addEventListener("click", function(e) {
     }
     newdata.push(new_obj);
     localStorage.setItem("data", JSON.stringify(newdata));
+    setTimeout(() => {
+        window.location = "notes.html"
+    }, 1500)
+
     titel.value = "";
     des.value = ""
     sizeoption.value = ""
@@ -36,7 +40,8 @@ function imageUpload() {
 
     if (file.type == "image/png" || file.type == "image/jpg" || file.type == "image/jpeg") {
 
-        Url_image = file.name;
+        url_64(file)
+
         return;
 
 
@@ -44,4 +49,15 @@ function imageUpload() {
         alert("this file not image")
     }
 
+}
+
+function url_64(file) {
+    let reader = new FileReader
+    reader.readAsDataURL(file)
+    reader.onload = function() {
+        Url_image = reader.result
+    }
+    reader.onerror = function() {
+        alert("error")
+    }
 }
