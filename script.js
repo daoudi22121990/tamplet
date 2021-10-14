@@ -56,6 +56,7 @@ let data = [{
         p: "infomation: pc ordinator i3 ram 4g batrie 6 houre prix:99$",
         img: "1.jpg",
         size: "large",
+        author:"web",
         counter: 1
     },
     {
@@ -64,6 +65,7 @@ let data = [{
         p: "infomation pc ordinator i3 ram 4g batrie 6 houre prix:99$",
         img: "pc.jpeg",
         size: "large",
+        author:"web",
         counter: 1
 
 
@@ -75,6 +77,7 @@ let data = [{
         p: "infomation pc ordinator i3 ram 4g batrie 6 houre prix:99$",
         img: "05-iphone-11-pro-and-iphone-11-max.jpg",
         size: "large",
+        author:"web",
         counter: 1
     },
     {
@@ -83,6 +86,7 @@ let data = [{
         p: "infomation pc ordinator i3 ram 4g batrie 6 houre prix:99$",
         img: "nadart.jpg",
         size: "large",
+        author:"web",
         counter: 1
     }
 ]
@@ -100,12 +104,13 @@ function show(data) {
     data.forEach(function(ele) {
         document.querySelector(".cart").innerHTML +=
             `
-        <div class="container">
+        <div class="container" style="border:${ele.author==="me" ? "4px solid tomato":""}">
         <img src="${ele.img}" alt="">
         <div class="info-shopping">
         <h3 onclick="iddetails(${ele.id})">${ele.h3}</h3>
         <p>${ele.p}</p>
         <p>${ele.size}</p>
+        ${ele.author==="me" ? `<button id="edit" onclick="editCart(${ele.id})">EDIT TO CART</button>` :""}
 
         </div>
         <div class="action">
@@ -300,4 +305,11 @@ function filterF() {
     show(filterData)
     this.value = ""
 
+}
+function editCart(id){
+    let item=dataS.find(i => i.id==id)
+    localStorage.setItem("edit",id)
+    setTimeout(()=>{
+        window.location="edit.html"
+    },1500)
 }
