@@ -20,6 +20,7 @@ Edit.addEventListener("click", function(e) {
             ele.h3=titel.value
             ele.img=Url_image
             ele.size=sizeoption.value
+            ele.p=des.value
             return ele
         
         }else{

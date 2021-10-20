@@ -38,7 +38,9 @@ function editCart(id){
 function deletmyCart(id){
     let item=data.filter(i => i.id!=id)
     localStorage.setItem("data",JSON.stringify(item))
-    meData=item.filter(item=>item.author==="me")
+    data=JSON.parse(localStorage.getItem("data"))
+    
+    meData=data.filter(item=>item.author==="me")
     
     
     show(meData)
