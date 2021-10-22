@@ -6,6 +6,8 @@ let email=document.getElementById("email_profile")
 let shopping_length=document.getElementById("length")
 let edit=document.getElementById("edit");
 */
+let img=localStorage.getItem("img_profyle")
+
 let user=localStorage.getItem("username")
 let email=localStorage.getItem("email")
 let len=JSON.parse(localStorage.getItem("stokage")).length
@@ -13,7 +15,7 @@ console.log(len)
 function show_information_profile(){
     informe.innerHTML=
     `
-        <img src="daoudi.JPG" alt="" id="img_profile">
+        <img src="${img? img:"daoudi.JPG"}" alt="" id="img_profile">
         <p id="user_name_profile">${user}</p>
         <p id="email_profile">${email}</p>
         <p id="length" >${len}</p>

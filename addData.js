@@ -42,6 +42,7 @@ function imageUpload() {
     if (file.type == "image/png" || file.type == "image/jpg" || file.type == "image/jpeg") {
 
         url_64(file)
+        console.log(Url_image);
 
         return;
 
@@ -58,6 +59,7 @@ function url_64(file) {
     reader.onload = function() {
         Url_image = reader.result
     }
+    
     reader.onerror = function() {
         alert("error")
     }

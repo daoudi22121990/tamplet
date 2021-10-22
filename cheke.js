@@ -1,5 +1,4 @@
 let log_in =localStorage.getItem("username");
-
 let profile_h3 = document.getElementById("profile_h3");
 let welcomUser = document.getElementById("profile");
 let hidenElement = document.getElementById("hide")
