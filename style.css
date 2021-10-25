@@ -148,6 +148,12 @@ body {
     font-family: cursive;
 }
 
+.info-shopping p {
+    width: 360px;
+    word-wrap: break-word; 
+}
+
+
 .info-shopping h3 {
     cursor: pointer;
 }
@@ -310,5 +316,16 @@ body {
 }
 #info{
     margin-left:-120px;
+    
+}
+.lan{
+    margin: 0 0 10px;
+    margin-top: 9px    ;
+    margin-left: 5px;
+    color: wheat;
+    cursor: pointer;
+    border: 1pxsolid green;
+    border-radius: 50%;
+    padding: 2px;
     
 }

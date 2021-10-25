@@ -1,0 +1,28 @@
+[dir="rtl"] #select{
+    float: left;
+    margin-left: 15px;
+}
+[dir="rtl"] .info-shopping{
+    margin-right: 15px;
+}
+[dir="rtl"] #micro-portable, #gbdfg, #phon, #music-mix, #micro-daoudi{
+    
+    
+}
+[dir="rtl"] .action button{
+    margin: 0 0;
+    
+    
+    
+}
+[dir="rtl"] .action i{
+    margin-left: 0;
+    width: 25px;
+    margin-right: 150px;
+}
+[dir="rtl"] #ar{
+    background-color: brown;
+}
+[dir="ltr"] #en{
+    background-color: brown;
+}

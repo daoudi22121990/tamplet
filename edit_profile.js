@@ -15,13 +15,20 @@ upload.addEventListener("change",upload_img)
 add.addEventListener("click",function edit(e){
     e.preventDefault()
     
-    console.log("hi")
-    titel.value=user
-    des.value=email
+   if (titel.value=="" || des.value=="" || upload.value==""){
+       alert("please full all fields")
+   }
+
+    else{
+        localStorage.setItem("username",titel.value)
+        localStorage.setItem("email",des.value)
+        localStorage.setItem("img_profyle",Url_image)
+        setTimeout(() => {
+            window.location="notes.html"
+            
+        }, 500);
+    }
    
-    localStorage.setItem("username",titel.value)
-    localStorage.setItem("email",des.value)
-    localStorage.setItem("img_profyle",Url_image)
 
 })
 function upload_img(){

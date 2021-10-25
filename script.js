@@ -1,3 +1,6 @@
+let lan=localStorage.getItem("lan")
+document.documentElement.setAttribute("dir",lan)
+
 let log_in = localStorage.getItem("username");
 let password = localStorage.getItem("password");
 let profile_h3 = document.getElementById("profile_h3");
@@ -102,7 +105,7 @@ if (localStorage.getItem("data")) {
 
 function show(data) {
     data.forEach(function(ele) {
-        document.querySelector(".cart").innerHTML +=
+        document.querySelector(".cart").innerHTML+=
             `
         <div class="container" style="border:${ele.author==="me" ? "4px solid tomato":""}">
         <img src="${ele.img}" alt="">
@@ -110,8 +113,7 @@ function show(data) {
         <h3 onclick="iddetails(${ele.id})">${ele.h3}</h3>
         <p>${ele.p}</p>
         <p>${ele.size}</p>
-        ${ele.author==="me" ? `<button id="edit" onclick="editCart(${ele.id})">EDIT TO CART</button>` :""}
-
+        ${ele.author==="me" ? `<button id="edit" onclick="editCart(${ele.id})">EDIT TO CART</button>` :``}
         </div>
         <div class="action">
         <button id="add" onclick="addcart(${ele.id})">add to cart</button>
